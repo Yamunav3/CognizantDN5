@@ -9,14 +9,20 @@
         content="width=device-width, initial-scale=1.0">
 
     <title>Bootstrap 5 Tasks</title>
+   <!--
+   ============================================================
+   EXERCISE 1.1 & 1.2: Setting Up Bootstrap 5
+   EXERCISE 2.1 & 2.2: Bootstrap Structure and Files
+   EXERCISE 19.1 & 19.2: Customization with SASS
+   
+   This demonstrates all aspects of Bootstrap setup with npm
+   and SASS customization.
+   ============================================================
+   -->
+    <!-- EXERCISE 1.2 & 19.2: Custom Bootstrap CSS (Compiled from custum.scss) -->
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS CDN -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-
+    <!-- EXERCISE 17.1: Bootstrap Icons CDN -->
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -24,7 +30,11 @@
 
 <body class="bg-light">
 
-    <!-- Navbar -->
+    <!-- ============================================================
+         EXERCISE 10.1: Responsive Navbar
+         Classes: navbar, navbar-expand-lg, navbar-dark, bg-dark
+         Features: Logo, responsive menu, search form
+         ============================================================ -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
@@ -72,7 +82,7 @@
 
                 </ul>
 
-                <!-- Search Form -->
+                <!-- EXERCISE 10.1: Search Form in Navbar -->
 
                 <form class="d-flex ms-3">
 
@@ -92,9 +102,16 @@
 
     </nav>
 
-    <!-- Typography -->
+    <!-- ============================================================
+         EXERCISE 7.1: Bootstrap Typography
+         Classes: display-1, lead, text-muted, fw-bold
+         
+         EXERCISE 7.2: Text Transformation
+         Classes: text-uppercase, text-lowercase, text-capitalize
+         ============================================================ -->
 
     <div class="container mt-5">
+        <h2 class="mb-4">EXERCISE 7: Typography Utilities</h2>
 
         <h1 class="display-1">
             Bootstrap Typography
@@ -126,9 +143,15 @@
 
     </div>
 
-    <!-- Responsive Grid -->
+    <!-- ============================================================
+         EXERCISE 3.1 & 3.2: Responsive Grid Layout
+         Mobile: col-12 (full width, 1 per row)
+         Tablet: col-md-6 (50% width, 2 per row)
+         Desktop: col-lg-4 (33.33% width, 3 per row)
+         ============================================================ -->
 
     <div class="container mt-5">
+        <h2 class="mb-4">EXERCISE 3: Responsive Grid Layout</h2>
 
         <div class="row g-3">
 
@@ -160,21 +183,26 @@
 
     </div>
 
-    <!-- Sidebar Layout -->
+    <!-- ============================================================
+         EXERCISE 4.1: Two-Column Layout (Sidebar)
+         Sidebar: col-md-3 (25% width)
+         Content: col-md-9 (75% width)
+         ============================================================ -->
 
     <div class="container mt-5">
+        <h2 class="mb-4">EXERCISE 4.1: Sidebar Layout (col-md-3 + col-md-9)</h2>
 
         <div class="row">
 
             <div class="col-md-3 bg-dark text-white p-4">
 
-                Sidebar
+                Sidebar (25%)
 
             </div>
 
             <div class="col-md-9 bg-white p-4">
 
-                Main Content Area
+                Main Content Area (75%)
 
             </div>
 
@@ -182,52 +210,236 @@
 
     </div>
 
-    <!-- Four Column Layout -->
+    <!-- ============================================================
+         EXERCISE 4.2: Four-Column Layout (Equal Width)
+         Each column: col-sm-3 (25% width on small+ screens)
+         ============================================================ -->
 
     <div class="container mt-5">
+        <h2 class="mb-4">EXERCISE 4.2: Four-Column Layout (col-sm-3)</h2>
 
         <div class="row text-center">
 
             <div class="col-sm-3 bg-danger p-4">
-                1
+                Box 1 (25%)
             </div>
 
             <div class="col-sm-3 bg-info p-4">
-                2
+                Box 2 (25%)
             </div>
 
             <div class="col-sm-3 bg-secondary p-4">
-                3
+                Box 3 (25%)
             </div>
 
             <div class="col-sm-3 bg-success p-4">
-                4
+                Box 4 (25%)
             </div>
 
         </div>
 
     </div>
 
-    <!-- Alignment -->
+    <!-- ============================================================
+         EXERCISE 5.1: Content Alignment & Centering
+         Classes: justify-content-center (horizontal)
+         Classes: align-items-center (vertical)
+         ============================================================ -->
 
     <div class="container mt-5">
+        <h2 class="mb-4">EXERCISE 5.1: Content Alignment</h2>
 
         <div class="row justify-content-center align-items-center"
             style="height:200px;">
 
             <div class="col-4 bg-primary text-white p-4 text-center">
 
-                Centered Content
+                Centered (Horizontal + Vertical)
 
             </div>
 
         </div>
 
     </div>
+    <!-- EXERCISE 9.2: Toggle Buttons (btn-group, btn-check) -->
 
-    <!-- Reordering -->
+<div class="container mt-5">
 
-    <div class="container mt-5">
+    <h2>EXERCISE 9.2: Toggle Buttons</h2>
+
+    <div class="btn-group" role="group">
+
+        <input type="checkbox"
+               class="btn-check"
+               id="btncheck1">
+
+        <label class="btn btn-outline-primary"
+               for="btncheck1">
+
+            Option 1
+
+        </label>
+
+        <input type="checkbox"
+               class="btn-check"
+               id="btncheck2">
+
+        <label class="btn btn-outline-success"
+               for="btncheck2">
+
+            Option 2
+
+        </label>
+
+    </div>
+
+</div>
+<!-- EXERCISE 10.2: Nav Pills (nav, nav-pills, nav-item) -->
+
+<div class="container mt-5">
+
+    <h2>EXERCISE 10.2: Nav Pills</h2>
+
+    <ul class="nav nav-pills">
+
+        <li class="nav-item">
+
+            <a class="nav-link active"
+               href="#">
+
+                Home
+
+            </a>
+
+        </li>
+
+        <li class="nav-item">
+
+            <a class="nav-link"
+               href="#">
+
+                Events
+
+            </a>
+
+        </li>
+
+        <li class="nav-item">
+
+            <a class="nav-link"
+               href="#">
+
+                Contact
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+<!-- EXERCISE 11.2: Media Object (d-flex, me-3, rounded, shadow) -->
+
+<div class="container mt-5">
+
+    <h2>EXERCISE 11.2: Media Object</h2>
+
+    <div class="d-flex bg-white p-3 shadow rounded">
+
+        <img src="https://picsum.photos/120"
+             class="me-3 rounded"
+             alt="media">
+
+        <div>
+
+            <h5>
+                Tech Conference
+            </h5>
+
+            <p>
+                Learn about AI, Web Development,
+                Cloud Computing and Modern Technologies.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- EXERCISE 13.2: Gradient Background (bg-dark, bg-gradient) -->
+
+<div class="container mt-5">
+
+    <div class="bg-dark bg-gradient text-white p-5 rounded">
+
+        <h2>
+            EXERCISE 13.2: Gradient Section
+        </h2>
+
+        <p>
+            Bootstrap Gradient Background Example
+        </p>
+
+    </div>
+
+</div>
+<!-- EXERCISE 14.2: Responsive Sidebar (d-none, d-md-block) -->
+
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-md-3
+                    d-none
+                    d-md-block
+                    bg-secondary
+                    text-white
+                    p-4">
+
+            EXERCISE 14.2: Sidebar (Hidden Mobile, Visible Tablet+)
+
+        </div>
+
+        <div class="col-md-9
+                    bg-light
+                    p-4">
+
+            Main Content Area
+
+        </div>
+
+    </div>
+
+</div>
+<!-- EXERCISE 17.2: Icon Only Buttons (bi bi-*, btn classes) -->
+
+<div class="container mt-5">
+
+    <h2>
+        EXERCISE 17.2: Icon Only Buttons
+    </h2>
+
+    <button class="btn btn-primary">
+
+        <i class="bi bi-house"></i>
+
+    </button>
+
+    <button class="btn btn-success">
+
+        <i class="bi bi-check-circle"></i>
+
+    </button>
+
+    <button class="btn btn-danger">
+
+        <i class="bi bi-trash"></i>
+
+    </button>
+
+</div>
+
+    <!-- EXERCISE 5.2: Column Reordering (order-md-2, order-md-1) -->
 
         <div class="row">
 
@@ -247,7 +459,7 @@
 
     </div>
 
-    <!-- Flex Utilities -->
+    <!-- EXERCISE 6.2: Flexbox Utilities (d-flex, flex-md-row, justify-content-between) -->
 
     <div class="container mt-5">
 
@@ -265,14 +477,14 @@
 
     </div>
 
-    <!-- Registration Form -->
+    <!-- EXERCISE 8.1: Registration Form (form-control, input-group, form-check) -->
 
     <div class="container mt-5">
 
         <form class="bg-white p-4 shadow rounded">
 
             <h2 class="mb-4">
-                Registration Form
+                EXERCISE 8.1: Registration Form
             </h2>
 
             <input type="text"
@@ -283,7 +495,7 @@
                 class="form-control mb-3"
                 placeholder="Email">
 
-            <!-- Input Group -->
+            <!-- EXERCISE 8.1: Input Group with prefix -->
 
             <div class="input-group mb-3">
 
@@ -297,7 +509,7 @@
 
             </div>
 
-            <!-- Checkbox -->
+            <!-- EXERCISE 8.1: Checkbox (form-check, form-check-input, form-check-label) -->
 
             <div class="form-check mb-3">
 
@@ -318,14 +530,14 @@
 
     </div>
 
-    <!-- Floating Login Form -->
+    <!-- EXERCISE 8.2: Floating Login Form (form-floating, form-control) -->
 
     <div class="container mt-5">
 
         <div class="bg-white p-4 rounded shadow">
 
             <h2>
-                Login Form
+                EXERCISE 8.2: Login Form (Floating Labels)
             </h2>
 
             <div class="form-floating mb-3">
@@ -352,7 +564,7 @@
 
     </div>
 
-    <!-- Buttons -->
+    <!-- EXERCISE 9.1: Buttons (btn, btn-primary, btn-secondary, btn-success, etc.) -->
 
     <div class="container mt-5">
 
@@ -378,7 +590,7 @@
 
     </div>
 
-    <!-- Button Group -->
+    <!-- EXERCISE 9.2: Button Group (btn-group, btn) -->
 
     <div class="container mt-5">
 
@@ -400,7 +612,7 @@
 
     </div>
 
-    <!-- Nav Tabs -->
+    <!-- EXERCISE 10.2: Nav Tabs (nav, nav-tabs, nav-link) -->
 
     <div class="container mt-5">
 
@@ -428,7 +640,7 @@
 
     </div>
 
-    <!-- Profile Card -->
+    <!-- EXERCISE 11.1: Profile Card (card, card-img-top, card-body, card-title) -->
 
     <div class="container mt-5">
 
@@ -454,7 +666,7 @@
 
     </div>
 
-    <!-- Pricing Section -->
+    <!-- EXERCISE 12.2: Pricing Section (spacing utilities, cards, p-4) -->
 
     <div class="container py-5">
 
@@ -494,7 +706,7 @@
 
     </div>
 
-    <!-- Visibility -->
+    <!-- EXERCISE 14.1: Display & Visibility (d-none, d-md-block, d-lg-flex) -->
 
     <div class="container mt-5">
 
@@ -506,7 +718,7 @@
 
     </div>
 
-    <!-- Position Utilities -->
+    <!-- EXERCISE 16.2: Position & Badge Overlay (position-absolute, translate-middle, badge) -->
 
     <div class="container mt-5 position-relative">
 
@@ -521,12 +733,12 @@
 
     </div>
 
-    <!-- Icons -->
+    <!-- EXERCISE 17.1: Bootstrap Icons (bi bi-facebook, bi bi-instagram, bi bi-twitter) -->
 
     <footer class="bg-dark text-white text-center p-4 mt-5">
 
         <h4>
-            Follow Us
+            EXERCISE 17.1: Follow Us (Social Icons)
         </h4>
 
         <i class="bi bi-facebook fs-2 me-3"></i>
@@ -537,7 +749,7 @@
 
     </footer>
 
-    <!-- Modal Button -->
+    <!-- EXERCISE 18.1: Modal Popup (data-bs-toggle, data-bs-target, modal classes) -->
 
     <div class="container mt-5 text-center">
 
@@ -545,13 +757,13 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal">
 
-            Open Modal
+            EXERCISE 18.1: Open Modal
 
         </button>
 
     </div>
 
-    <!-- Modal -->
+    <!-- EXERCISE 18.1: Modal Structure (modal, modal-dialog, modal-content, modal-header) -->
 
     <div class="modal fade"
         id="exampleModal">
@@ -563,7 +775,7 @@
                 <div class="modal-header">
 
                     <h5 class="modal-title">
-                        Bootstrap Modal
+                        EXERCISE 18.1: Bootstrap Modal Example
                     </h5>
 
                     <button class="btn-close"
@@ -583,7 +795,7 @@
 
     </div>
 
-    <!-- Accordion -->
+    <!-- EXERCISE 18.2: Accordion / Collapsible (accordion, accordion-button, collapse) -->
 
     <div class="container mt-5">
 
@@ -621,19 +833,26 @@
 
     </div>
 
-    <!-- Fixed Footer -->
+    <!-- EXERCISE 16.1: Fixed Footer (position-fixed, bottom-0, w-100) -->
 
     <div class="bg-dark text-white text-center p-3 position-fixed bottom-0 w-100">
 
-        Fixed Footer
+        EXERCISE 16.1: Fixed Footer
 
     </div>
 
-    <!-- Bootstrap JS -->
+    <!-- EXERCISE 2.2: Bootstrap 5 JavaScript Bundle (required for modal, accordion, navbar) -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
     </script>
 
 </body>
 
 </html>
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+// ===================================
+// Bootstrap 5 Custom Variable Overrides
+// ===================================
+
+// Primary brand color - Orange
+$primary: #ff5722;
+
+// Secondary brand color - Blue
+$secondary: #457b9d;
+
+// Success state color - Dark Green
+$success: #2d6a4f;
+
+// Border radius - Rounded corners
+$border-radius: 0.75rem;
+
+// Default font family
+$font-family-base: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+// ===================================
+// Import Bootstrap After Overrides
+// ===================================
+@import "node_modules/bootstrap/scss/bootstrap";
