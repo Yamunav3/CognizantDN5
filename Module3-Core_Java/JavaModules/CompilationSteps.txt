@@ -1,0 +1,25 @@
+Compilation Steps
+
+Create Output Folder
+mkdir mods
+
+Compile Utility Module
+javac -d mods/com.utils ^
+com.utils/module-info.java ^
+com.utils/MessageUtil.java
+
+
+Compile Greetings Module
+javac --module-path mods ^
+-d mods/com.greetings ^
+com.greetings/module-info.java ^
+com.greetings/Main.java
+
+
+Run the Module
+java --module-path mods ^
+-m com.greetings/com.greetings.Main
+
+
+Output
+Hello from Util Module!
