@@ -47,3 +47,23 @@ INSERT INTO savings_accounts VALUES (203, 3, 8000);
 
 
 SELECT * FROM savings_accounts;
+
+
+
+
+-- Employees Table
+CREATE TABLE employees (
+    employee_id     NUMBER          PRIMARY KEY,
+    name            VARCHAR2(100),
+    department_id   NUMBER,
+    salary          NUMBER
+);
+
+-- Sample data
+INSERT INTO employees VALUES (301, 'Alice', 10, 50000);
+INSERT INTO employees VALUES (302, 'Tom',   10, 55000);
+INSERT INTO employees VALUES (303, 'Maria', 20, 60000);
+
+
+
+SELECT * FROM employees;
