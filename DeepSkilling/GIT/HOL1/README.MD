@@ -82,7 +82,7 @@ git config --global --list
 Expected Output
 
 ```text
-user.name=Vepada Yamuna
+user.name=yamunav3
 user.email=yamuna@gmail.com
 ```
 
