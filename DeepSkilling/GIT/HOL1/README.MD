@@ -54,7 +54,7 @@ git config --global user.name "Your Name"
 Example
 
 ```bash
-git config --global user.name "Vepada Yamuna"
+git config --global user.name "yamunav3"
 ```
 
 ---
@@ -68,7 +68,7 @@ git config --global user.email "your_email@example.com"
 Example
 
 ```bash
-git config --global user.email "yamuna@gmail.com"
+git config --global user.email "yamunav32006@gmail.com"
 ```
 
 ---
@@ -332,18 +332,18 @@ git push origin main
 
 # Common Git Commands Used
 
-| Command | Description |
-|----------|-------------|
-| `git init` | Initialize a Git repository |
-| `git status` | Show repository status |
-| `git add` | Stage files |
-| `git commit` | Save changes |
-| `git pull` | Download latest changes |
-| `git push` | Upload commits |
-| `git config` | Configure Git |
-| `git remote -v` | View remote repositories |
-| `ls -la` | Display hidden files |
-| `cat filename` | View file contents |
+| Command         | Description                 |
+| --------------- | --------------------------- |
+| `git init`      | Initialize a Git repository |
+| `git status`    | Show repository status      |
+| `git add`       | Stage files                 |
+| `git commit`    | Save changes                |
+| `git pull`      | Download latest changes     |
+| `git push`      | Upload commits              |
+| `git config`    | Configure Git               |
+| `git remote -v` | View remote repositories    |
+| `ls -la`        | Display hidden files        |
+| `cat filename`  | View file contents          |
 
 ---
 
